@@ -1,0 +1,3 @@
+# vitepress 产物
+.vitepress/dist
+.vitepress/cache

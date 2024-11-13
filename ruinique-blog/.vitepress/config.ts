@@ -3,6 +3,10 @@ import { defineConfig } from 'vitepress-theme-async/config';
 export default defineConfig({
 	srcDir: './',
 	themeConfig: {
+		page: {
+			archives: '/archives',
+			categories: '/categories',
+		},
 		topBars: [
 			{ title: 'Home', url: '/' },
 			{ title: 'About', url: '/about' },

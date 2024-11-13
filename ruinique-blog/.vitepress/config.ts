@@ -11,6 +11,7 @@ export default defineConfig({
 			{ title: 'Home', url: '/' },
 			{ title: 'About', url: '/about' },
 			{ title: 'Archive', url: '/archive' },
+			{ title: 'Categories', url: '/categories' },
 		],
 		links: [
 		],

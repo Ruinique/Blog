@@ -2,7 +2,7 @@
 title: 如何去正确调用 cuSolver
 cover: /1732689719579.png
 date: 2024-11-27 14:43:00
-categories: ["读研"，"技术"]
+categories: "高性能"
 author: ruinique
 ---
 
@@ -30,9 +30,9 @@ cuSolverDN 库提供了两类不同的 API，legacy 和 generic。
 
 对于我们的 legacy API，我们使用 cuSolverDN 的前缀，比如 `cusolverDn<t><Op>`。
 
-<t> 可以是 S、D、C 或 Z，分别代表 `float`、`double`、`cuComplex` 和 `cuDoubleComplex`。
+`<t>` 可以是 S、D、C 或 Z，分别代表 `float`、`double`、`cuComplex` 和 `cuDoubleComplex`。
 
-<op> 可以是 Cholesky(`potrf`)、QR (`geqrf`)、LU (`getrf`) 或 LDL (`sytrf`) 。
+`<op>` 可以是 Cholesky(`potrf`)、QR (`geqrf`)、LU (`getrf`) 或 LDL (`sytrf`) 。
 
 而对于通用 API，我们在使用的时候和数据类型无关，支持用 64 位整数来定义矩阵和向量的维度，具体调用类似 `cusolverDn<Op>`。
 
